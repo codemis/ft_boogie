@@ -18,6 +18,7 @@
 		66E1304816436AE80008F6D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E1304716436AE80008F6D9 /* Default-568h@2x.png */; };
 		66E1304B16436AE80008F6D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E1304916436AE80008F6D9 /* MainStoryboard.storyboard */; };
 		66E1304E16436AE80008F6D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E1304D16436AE80008F6D9 /* ViewController.m */; };
+		66E13059164379EA0008F6D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E13058164379EA0008F6D9 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		66E1304A16436AE80008F6D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		66E1304C16436AE80008F6D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66E1304D16436AE80008F6D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		66E13058164379EA0008F6D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E13059164379EA0008F6D9 /* AVFoundation.framework in Frameworks */,
 				66E1303216436AE80008F6D9 /* UIKit.framework in Frameworks */,
 				66E1303416436AE80008F6D9 /* Foundation.framework in Frameworks */,
 				66E1303616436AE80008F6D9 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		66E1303016436AE80008F6D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66E13058164379EA0008F6D9 /* AVFoundation.framework */,
 				66E1303116436AE80008F6D9 /* UIKit.framework */,
 				66E1303316436AE80008F6D9 /* Foundation.framework */,
 				66E1303516436AE80008F6D9 /* CoreGraphics.framework */,

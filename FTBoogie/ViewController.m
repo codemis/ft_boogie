@@ -1,12 +1,13 @@
 #define FTBURL @"http://ftbpodcasts.libsyn.com/rss"
 #import "ViewController.h"
 
-@interface ViewController ()<NSXMLParserDelegate>
+@interface ViewController ()<NSXMLParserDelegate, UIGestureRecognizerDelegate>
 @property(strong,nonatomic)NSMutableString *innerContent;
 @property(nonatomic)BOOL inItemTag;
 @property(strong, nonatomic)NSMutableDictionary *firstPodcast;
 @property (strong, nonatomic) IBOutlet UIImageView *podcastImageView;
 @property (strong, nonatomic) IBOutlet UILabel *podcastTitleLabel;
+- (IBAction)handleTapGesture:(UITapGestureRecognizer*)sender;
 @end
 
 @implementation ViewController
@@ -51,6 +52,9 @@
         if ([elementName isEqualToString:@"media:thumbnail"]) {
             self.firstPodcast[@"imageURL"] = [NSURL URLWithString:[attributeDict objectForKey:@"url"]];
         }
+        if ([elementName isEqualToString:@"enclosure"]) {
+            self.firstPodcast[@"audioURL"] = [NSURL URLWithString:[attributeDict objectForKey:@"url"]];
+        }
     }
 }
 -(void)     parser:(NSXMLParser *)parser
@@ -75,4 +79,7 @@
     }
 }
 
+- (IBAction)handleTapGesture:(UITapGestureRecognizer*)sender {
+    
+}
 @end

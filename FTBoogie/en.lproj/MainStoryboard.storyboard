@@ -21,9 +21,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wWa-Rd-wfV">
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="338" id="Veu-0L-SnJ"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8YC-mE-zON" appends="YES" id="QIx-Lj-OuV"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.61346928746147833" green="1" blue="0.84342575423849797" alpha="1" colorSpace="calibratedRGB"/>
@@ -42,6 +46,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8YC-mE-zON">
+                    <connections>
+                        <action selector="handleTapGesture:" destination="2" id="Qna-Zn-g8p"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
@@ -52,6 +61,7 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="handleTapGesture:" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="podcastImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="podcastTitleLabel" candidateClass="UILabel"/>
             </relationships>
