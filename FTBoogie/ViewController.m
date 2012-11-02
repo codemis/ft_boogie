@@ -5,6 +5,8 @@
 @property(strong,nonatomic)NSMutableString *innerContent;
 @property(nonatomic)BOOL inItemTag;
 @property(strong, nonatomic)NSMutableDictionary *firstPodcast;
+@property (strong, nonatomic) IBOutlet UIImageView *podcastImageView;
+@property (strong, nonatomic) IBOutlet UILabel *podcastTitleLabel;
 @end
 
 @implementation ViewController
@@ -16,7 +18,8 @@
     [xmlParser setDelegate:self];
     BOOL success = [xmlParser parse];
     if (success) {
-        
+        self.podcastTitleLabel.text = self.firstPodcast[@"title"];
+        self.podcastImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.firstPodcast[@"imageURL"]]];
     } else{
         
     }
@@ -46,7 +49,7 @@
             self.innerContent = [[NSMutableString alloc] init];
         }
         if ([elementName isEqualToString:@"media:thumbnail"]) {
-            self.firstPodcast[@"imageURL"] = [attributeDict objectForKey:@"url"];
+            self.firstPodcast[@"imageURL"] = [NSURL URLWithString:[attributeDict objectForKey:@"url"]];
         }
     }
 }
