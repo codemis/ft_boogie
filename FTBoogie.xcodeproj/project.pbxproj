@@ -19,6 +19,7 @@
 		66E1304B16436AE80008F6D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E1304916436AE80008F6D9 /* MainStoryboard.storyboard */; };
 		66E1304E16436AE80008F6D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E1304D16436AE80008F6D9 /* ViewController.m */; };
 		66E13059164379EA0008F6D9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E13058164379EA0008F6D9 /* AVFoundation.framework */; };
+		66E1305B164422540008F6D9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 66E1305A164422540008F6D9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		66E1304C16436AE80008F6D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66E1304D16436AE80008F6D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		66E13058164379EA0008F6D9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66E1305A164422540008F6D9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		66E1302216436AE80008F6D9 = {
 			isa = PBXGroup;
 			children = (
+				66E1305A164422540008F6D9 /* README.md */,
 				66E1303716436AE80008F6D9 /* FTBoogie */,
 				66E1303016436AE80008F6D9 /* Frameworks */,
 				66E1302E16436AE80008F6D9 /* Products */,
@@ -167,6 +170,7 @@
 				66E1304616436AE80008F6D9 /* Default@2x.png in Resources */,
 				66E1304816436AE80008F6D9 /* Default-568h@2x.png in Resources */,
 				66E1304B16436AE80008F6D9 /* MainStoryboard.storyboard in Resources */,
+				66E1305B164422540008F6D9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
